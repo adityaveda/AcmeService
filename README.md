@@ -3,11 +3,13 @@ A mock certificate services which retrieves certificates and automatically renew
 
 CERTIFICATE-SERVICE
 1 – /cert/{domain}
+
 Fetch a certificate based on domain, otherwise timeout for 10 seconds and create a new certificate and return a JSON response.
 
 Example: 
 localhost:8080/cert/av
 RESPONSE:
+
 {
     "domain": "av",
     "uuID": "a2c36c5e-c084-4133-9ee4-2dd54b2d5b9b",
@@ -16,10 +18,14 @@ RESPONSE:
 
 2 – /certs
 
-Fetch a list of all certificates as a JSON response. 
+Fetch a list of all certificates as a JSON response.
+
 Example:
+
 Localhost:8080/certs
 RESPONSE:
+
+
 [
     {
         "domain": "av",
