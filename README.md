@@ -8,6 +8,7 @@ Fetch a certificate based on domain, otherwise timeout for 10 seconds and create
 
 Example: 
 localhost:8080/cert/av
+
 RESPONSE:
 
 {
@@ -23,6 +24,7 @@ Fetch a list of all certificates as a JSON response.
 Example:
 
 Localhost:8080/certs
+
 RESPONSE:
 
 
@@ -54,9 +56,15 @@ Option 1:
 1.	git clone
 2.	sudo apt install maven
 3.	mvn spring-boot:run
+
+
 Option 2:
+
+
 To Build .jar and execute through jar
+
 Mvn install -DskipTests
+
 java -jar ./target/AcmeService-1.0-SNAPSHOT.jar
 
 
