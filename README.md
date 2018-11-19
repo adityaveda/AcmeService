@@ -1,7 +1,8 @@
 # AcmeService
 A mock certificate services which retrieves certificates and automatically renews them
 
-CERTIFICATE-SERVICE
+CERTIFICATE-SERVICE:
+
 1 – /cert/{domain}
 
 Fetch a certificate based on domain, otherwise timeout for 10 seconds and create a new certificate and return a JSON response.
