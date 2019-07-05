@@ -1,4 +1,4 @@
-# AcmeService
+~~~~# AcmeService
 A mock certificate services which retrieves certificates and automatically renews them
 
 CERTIFICATE-SERVICE:
@@ -69,6 +69,15 @@ Mvn install -DskipTests
 java -jar ./target/AcmeService-1.0-SNAPSHOT.jar
 
 
+Docker:(preffered)
+Prereq: Target machine must have docker installed and running. 
+
+1. git clone https://github.com/adityaveda/AcmeService.git
+2. cd AcmeService
+3. docker build -t acme-service-docker .
+4. docker run -p 8080:8080 acme-service-docker
+
+It is accessible at localhost:8080
 
 
 
